@@ -8,9 +8,12 @@ terraform {
   }
   required_version = ">= 1.3.4"
 
-  # backend "azurerm" {
-  # }
+  backend "azurerm" {
+    key = "acalza/hub.tfstate"
+  }
 }
+
+
 provider "azurerm" {
   features {}
 }

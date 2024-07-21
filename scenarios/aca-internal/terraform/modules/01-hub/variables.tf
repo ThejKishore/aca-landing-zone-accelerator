@@ -63,3 +63,20 @@ variable "azureFirewallSubnetManagementName" {
 variable "azureFirewallSubnetManagementAddressPrefix" {}
 
 variable "infraSubnetAddressPrefix" {}
+
+variable "RESOURCE_GROUP_NAME" {
+  description = "Resource group name pass env vairable $RESOURCE_GROUP_NAME"
+  type        = string
+}
+
+variable "STORAGE_ACCOUNT_NAME" {
+  description = "Storage account name pass env vairable $STORAGE_ACCOUNT_NAME"
+  type        = string
+}
+
+
+variable "CONTAINER_NAME" {
+  description = "Storage container name pass env vairable $CONTAINER_NAME"
+  type        = string
+}
+
